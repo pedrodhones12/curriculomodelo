@@ -1,198 +1,131 @@
+
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;   
-   }
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
 body{
-   width: 100%;
-   color: #069;
-   text-align: center;
-   min-height: 100vh;
-   font-weight: bold;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   }
+background:#f4f6fb;
+color:#333;
+line-height:1.7;
+}
+
 .container{
-      width: 50%;
-      overflow-y: scroll;
-      height: 90vh;
-      padding: 15px 2%;
-      box-shadow: 0 0 5px #069;
-  }
-.container::-webkit-scrollbar{
-      width: 14px;
-      border: 1px solid #069;
-  }
-.container::-webkit-scrollbar-thumb{
-      background-color: #069;
-      border-radius: 6px;
-  }
-.hr_dados1{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 5px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
- }
-.hr_dados1::after {
-   content: "TATIANA MORAIS SANTOS";
-   display: inline-block;
-   position: relative;
-   top: -0.7em;
-   font-size: 1.4em;
-   padding: 0 0.3em;
-   background: white;
- }
-.hr_01{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
- }
-.hr_01::after{
-content: 'Objetivo';
-display: inline;
-position: relative;
-top: -0.7em;
-font-size: 1.4em;
-padding: 0 0.3em;
-background-color: #fff;
- }
-.hr_02{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
-   }
-.hr_02::after{
-   content: 'Resumo';
-   display: inline;
-   position: relative;
-   top: -0.7em;
-   font-size: 1.4em;
-   padding: 0 0.3em;
-   background-color: #fff;
-   }
-.hr_03{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
-  }
- .hr_03::after{
-  content: 'Formação';
-  display: inline;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.4em;
-  padding: 0 0.3em;
-  background-color: #fff;
- }
-.hr_04{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
-  }
-.hr_04::after{
-  content: 'Experiência';
-  display: inline;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.4em;
-  padding: 0 0.3em;
-  background-color: #fff;
- }
-.hr_05{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
- }
-.hr_05::after{
- content: 'Ferramentas';
- display: inline;
- position: relative;
- top: -0.7em;
- font-size: 1.4em;
- padding: 0 0.3em;
- background-color: #fff;
- }
-.hr_06{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
- }
-.hr_06::after{
-  content: 'Idiomas';
-  display: inline;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.4em;
-  padding: 0 0.3em;
-  background-color: #fff;
- }
- .hr_07{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
- }
-.hr_07::after{
-   content: 'Linguagens';
-   display: inline;
-   position: relative;
-   top: -0.7em;
-   font-size: 1.4em;
-   padding: 0 0.3em;
-   background-color: #fff;
-   }
-.hr_08{
-   border-top: medium dashed #069;
-   border-bottom: medium dashed #069;
-   height: 3px;
-   overflow: visible;
-   padding: 0;
-   text-align: center;
- }
-.hr_08::after{
-  content: 'Redes Sociais';
-  display: inline;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.4em;
-  padding: 0 0.3em;
-  background-color: #fff;
-  }
-.fab{
-  cursor: pointer;
-  margin: 5px;
-  max-height: 100%;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  }
-.fab:hover{
-   -webkit-transform: scale(1.5);
-   -moz-transform: scale(1.5);
-   transform: scale(1.5);
-   color: #000;
-   }
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:linear-gradient(135deg,#0052d4,#4364f7,#6fb1fc);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+}
+
+header h3{
+font-weight:300;
+margin:15px 0;
+}
+
+.contato{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:20px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px;
+background:#fff;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav a{
+text-decoration:none;
+color:#0052d4;
+font-weight:600;
+}
+
+section{
+padding:70px 0;
+}
+
+h2{
+margin-bottom:30px;
+color:#0052d4;
+font-size:32px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skills span{
+background:#0052d4;
+color:white;
+padding:12px 20px;
+border-radius:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:15px;
+}
+
+.grid div{
+background:white;
+padding:18px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+footer{
+background:#0b162c;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+ul{
+padding-left:25px;
+}
+
+html{
+scroll-behavior:smooth;
+}
